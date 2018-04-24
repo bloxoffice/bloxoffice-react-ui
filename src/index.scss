@@ -1,0 +1,225 @@
+// import all static css files
+@import url('https://fonts.googleapis.com/css?family=Open Sans');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import '../node_modules/font-awesome/css/font-awesome.min.css';
+@import "../node_modules/react-progress-bar-plus/lib/progress-bar.css";
+@import './grid.scss';
+
+@import 'containers/Login/Login.styles.scss';
+
+@import "components/Card/Card";
+@import "components/FullScreenModal/fullscreenmodal";
+@import "components/ImageUploader/imageUploader";
+@import "containers/Npo/NpoPreview/npopage.css";
+
+@import '../node_modules/react-accessible-accordion/dist/fancy-example.css';
+@import "../node_modules/slick-carousel/slick/slick.css";
+@import "../node_modules/slick-carousel/slick/slick-theme.css";
+
+@font-face {
+  font-family: 'CircularStd-BlackItalic';
+  src: url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-BlackItalic.eot?#iefix') format('embedded-opentype'),
+  url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-BlackItalic.otf')  format('opentype'),
+  url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-BlackItalic.woff') format('woff'),
+  url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-BlackItalic.ttf')  format('truetype'),
+  url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-BlackItalic.svg#CircularStd-BlackItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CircularStd-Black';
+  src: url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-Black.eot?#iefix') format('embedded-opentype'),
+  url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-Black.otf')  format('opentype'),
+  url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-Black.woff') format('woff'),
+  url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-Black.ttf')  format('truetype'),
+  url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-Black.svg#CircularStd-Black') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CircularStd-Bold';
+  src: url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-Bold.eot?#iefix') format('embedded-opentype'),
+  url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-Bold.otf')  format('opentype'),
+  url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-Bold.woff') format('woff'),
+  url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-Bold.ttf')  format('truetype'),
+  url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-Bold.svg#CircularStd-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CircularStd-BoldItalic';
+  src: url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-BoldItalic.otf')  format('opentype'),
+  url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-BoldItalic.woff') format('woff'),
+  url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-BoldItalic.ttf')  format('truetype'),
+  url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-BoldItalic.svg#CircularStd-BoldItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CircularStd-Book';
+  src: url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-Book.eot?#iefix') format('embedded-opentype'),
+  url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-Book.otf')  format('opentype'),
+  url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-Book.woff') format('woff'),
+  url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-Book.ttf')  format('truetype'),
+  url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-Book.svg#CircularStd-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CircularStd-BookItalic';
+  src: url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-BookItalic.eot?#iefix') format('embedded-opentype'),
+  url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-BookItalic.otf')  format('opentype'),
+  url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-BookItalic.woff') format('woff'),
+  url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-BookItalic.ttf')  format('truetype'),
+  url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-BookItalic.svg#CircularStd-BookItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CircularStd-Medium';
+  src: url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-Medium.eot?#iefix') format('embedded-opentype'),
+  url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-Medium.otf')  format('opentype'),
+  url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-Medium.woff') format('woff'),
+  url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-Medium.ttf')  format('truetype'),
+  url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-Medium.svg#CircularStd-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CircularStd-MediumItalic';
+  src: url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-MediumItalic.eot?#iefix') format('embedded-opentype'),
+  url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-MediumItalic.otf')  format('opentype'),
+  url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-MediumItalic.woff') format('woff'),
+  url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-MediumItalic.ttf')  format('truetype'),
+  url('https://s3.amazonaws.com/hl-the/assets/fonts/CircularStd-MediumItalic.svg#CircularStd-MediumItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$gray-light: #F2F3F5;
+$blue-dark: #2B3642;
+$blue: #00D1E8;
+
+html, body {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'CircularStd-Black', sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  color: $blue-dark;
+}
+
+#root {
+  min-height: 100%;
+  position: relative;
+}
+
+nav {
+  padding: 20px;
+  background: $gray-light;
+  margin-bottom: 40px;
+}
+
+.main {
+  //padding-left: 20px;
+  //padding-right: 20px;
+  //padding-bottom: 200px;
+}
+
+//footer {
+//  background: $blue-dark;
+//  width: 100%;
+//  position: absolute;
+//  bottom: 0;
+//  left: 0;
+//  //height: 150px;
+//  text-align: center;
+//}
+
+.active {
+  color: $blue;
+}
+
+.new-campaign-container {
+  padding: 90px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.red-asterix {
+  color: red;
+}
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.dim-bg {
+  background-color: #777777;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.loading-icon {
+  margin: 25% 50%;
+  color: #3b80a7;
+  font-size: 100px !important;
+  display: inline-block;
+}
+
+input:not([type]),
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url], input[type=time],
+input[type=date], input[type=datetime],
+input[type=datetime-local],
+input[type=number], input[type=search],
+textarea.materialize-textarea{
+  border-radius: 6px;
+  //height: 34px;
+  color: black;
+  border: solid .5px #d8d8d8;
+  padding: 10px 7.5px 10px 7.5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #484848;
+  opacity: 0.5;
+}
+
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #484848;
+  opacity: 0.5;
+}
+
+input:-ms-input-placeholder { /* Microsoft Edge */
+  color: #484848;
+  opacity: 0.5;
+}
