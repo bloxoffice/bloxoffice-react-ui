@@ -7,7 +7,7 @@ import {
 
 import asAsyncComponent from './utils/asAsyncComponent';
 
-const AsyncNpoDashboard =  asAsyncComponent(() => import('./containers/Dashboard'));
+const AsyncHome =  asAsyncComponent(() => import('./containers/Home'));
 
 const page = {
   index: {
@@ -67,7 +67,7 @@ const App = () => (
       <meta content={page.index.description} name='twitter:description' />
       <meta content={page.index.twitterShare} name='twitter:image' />
       <Switch>
-        <Route exact path="/login" component={Login} />
+        <Route exact path="/" component={AsyncHome} />
       </Switch>
     </div>
   </div>

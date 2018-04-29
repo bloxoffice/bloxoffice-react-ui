@@ -1,7 +1,6 @@
 import url from 'url';
 import { matchPath } from 'react-router-dom';
 
-import Preview from '../src/containers/Preview';
 
 const routesThatFetchData = [
   // {
